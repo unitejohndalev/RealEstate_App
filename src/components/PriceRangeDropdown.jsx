@@ -1,7 +1,11 @@
 import React, { useContext, useState } from "react";
 
 //import icons
-import { RiWallet3Line, RiArrowDownSLine, RiArrowUpSLine } from "react-icons/ri";
+import {
+  RiWallet3Line,
+  RiArrowDownSLine,
+  RiArrowUpSLine,
+} from "react-icons/ri";
 
 //import headless ui
 import { Menu } from "@headlessui/react";
@@ -15,29 +19,29 @@ const PriceRangeDropdown = () => {
 
   //dropdown menu state
   const [isOpen, setIsOpen] = useState(false);
-  
+
   //range price
   const prices = [
     {
       value: "Price range (any)",
     },
     {
-      value: "12000 - 30000",
+      value: "100000 - 130000",
     },
     {
-      value: "100000 - 150000",
+      value: "130000 - 160000",
     },
     {
-      value: "190000 - 250000",
+      value: "160000 - 190000",
     },
     {
-      value: "260000 - 350000",
+      value: "190000 - 220000",
     },
     {
-      value: "400000 - 550000",
+      value: "10000 - 30000",
     },
     {
-      value: "600000 - 750000",
+      value: "30000 - 40000",
     },
   ];
 
@@ -81,4 +85,4 @@ const PriceRangeDropdown = () => {
   );
 };
 
-export default PriceRangeDropdown
+export default PriceRangeDropdown;
